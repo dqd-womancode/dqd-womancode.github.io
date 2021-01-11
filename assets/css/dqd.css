@@ -201,6 +201,7 @@
     color: white;
     z-index: 999999999;
     display: none;
+    font-size:24px;
 }
 .dtr-slick-slider div .info a{
     color: white;
