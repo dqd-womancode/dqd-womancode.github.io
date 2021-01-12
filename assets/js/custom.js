@@ -1,5 +1,5 @@
 
-AOS.init({duration: 1200});
+AOS.init({duration: 3000});
 
 // Custom JavaScript
 $(document).ready(function() {
@@ -21,8 +21,8 @@ $(document).ready(function() {
 			$('.dark-nav-on-load').addClass("dtr-menu-dark").removeClass("dtr-menu-light");
 		}
 	}
-	headerSticky();
-	$(window).scroll(headerSticky);
+	// headerSticky();
+	// $(window).scroll(headerSticky);
 
 	// main menu
 	$('.main-navigation .sf-menu').superfish({
@@ -52,10 +52,10 @@ $(document).ready(function() {
 	 }); // menu ends
 
 	// scrollspy
-	$('body').scrollspy({
-		offset:	170,
-		target:	'.dtr-scrollspy'
-	});
+	// $('body').scrollspy({
+	// 	offset:	170,
+	// 	target:	'.dtr-scrollspy'
+	// });
 
 	// nav scroll
 	if($('#dtr-header-global').length){
