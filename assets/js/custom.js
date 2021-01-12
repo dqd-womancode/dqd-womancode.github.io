@@ -1,6 +1,7 @@
 
 AOS.init({
 	offset: 720,
+	duration: 1500
 });
 
 // Custom JavaScript
