@@ -1,12 +1,11 @@
 
-AOS.init({duration: 3000});
+AOS.init({
+	offset: 720,
+});
 
 // Custom JavaScript
 $(document).ready(function() {
     "use strict";
-
-
-
 
 	// sticky header
 	function headerSticky(){
@@ -21,8 +20,8 @@ $(document).ready(function() {
 			$('.dark-nav-on-load').addClass("dtr-menu-dark").removeClass("dtr-menu-light");
 		}
 	}
-	// headerSticky();
-	// $(window).scroll(headerSticky);
+	headerSticky();
+	$(window).scroll(headerSticky);
 
 	// main menu
 	$('.main-navigation .sf-menu').superfish({
@@ -52,10 +51,10 @@ $(document).ready(function() {
 	 }); // menu ends
 
 	// scrollspy
-	// $('body').scrollspy({
-	// 	offset:	170,
-	// 	target:	'.dtr-scrollspy'
-	// });
+	$('body').scrollspy({
+		offset:	170,
+		target:	'.dtr-scrollspy'
+	});
 
 	// nav scroll
 	if($('#dtr-header-global').length){
@@ -311,5 +310,5 @@ $(document).ready(function() {
 // on load
 $(window).on('load', function(){
 	// preloader
-	$('.dtr-preloader').delay(400).fadeOut(500);
+	//$('.dtr-preloader').delay(400).fadeOut(500);
 }); // close on load
