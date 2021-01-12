@@ -1,6 +1,7 @@
 
 AOS.init({
-	offset: 720,
+	disable: 'mobile',
+	offset: 1000,
 	duration: 1500
 });
 
