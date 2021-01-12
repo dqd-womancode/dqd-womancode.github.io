@@ -1,8 +1,9 @@
 
+AOS.init({duration: 1200});
+
 // Custom JavaScript
 $(document).ready(function() {
     "use strict";
-	AOS.init();
 
 
 
