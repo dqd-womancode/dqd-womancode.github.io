@@ -334,3 +334,11 @@
 .small-device-space h2{
     font-size: 2em;
 }
+
+.whatsapp{
+    width: 60px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+ }
