@@ -110,7 +110,7 @@
 .dtr-servicebox-dqd .dtr-servicebox-img{
     text-align: center;
 }
-
+.dtr-servicebox-dqd h3,
 .dtr-servicebox-dqd h4{
     text-align: center;
     text-transform: uppercase;
@@ -171,7 +171,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(174, 208, 0, 0.2);
+        background: rgba(174, 208, 0, 0.4);
         z-index: 9;
 
 }
@@ -196,12 +196,16 @@
 .dtr-slick-slider div .info h1{
    color: white;
     z-index: 999999999;
+    font-size: 2em;
 }
+
+
 .dtr-slick-slider div .info p{
-    color: white;
+
+    color: rgba(25,28,47,0.65);
     z-index: 999999999;
-    display: none;
-    font-size:24px;
+    /*display: none;*/
+    font-size:18px;
 }
 .dtr-slick-slider div .info a{
     color: white;
@@ -212,8 +216,12 @@
 }
 
 @media (min-width: 768px) {
+    .dtr-slick-slider div .info h1{
+        font-size: 3.529em;
+    }
     .dtr-slick-slider div .info p{
-        display: block;
+        font-size:24px;
+        color: white;
     }
     .dtr-slick-slider div .info a{
         display: inline-block;
@@ -244,6 +252,7 @@
 
 }
 
+.dqd-tech h3,
 .dqd-tech h4{
     color: #aed000;
     font-size: 0.9em;
