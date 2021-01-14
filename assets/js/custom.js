@@ -28,7 +28,7 @@ $(document).ready(function() {
 		// Time calculations for days, hours, minutes and seconds
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString();
 		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, "0");
-		// var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, "0");
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, "0");
 
 		$("#days").html( days.replace(/(\d)/g, '<span class="digit">$1</span>'));
 		$("#hours").html(hours.replace(/(\d)/g, '<span class="digit">$1</span>'));
