@@ -9,6 +9,42 @@ AOS.init({
 $(document).ready(function() {
     "use strict";
 
+	$('.number').html(function(i, v){
+		return v.replace(/(\d)/g, '<span class="digit">$1</span>');
+	});
+
+	// Set the date we're counting down to
+	var countDownDate = new Date("Mar 20, 2021 20:00:00").getTime();
+
+// Update the count down every 1 second
+	var x = setInterval(function() {
+
+		// Get today's date and time
+		var now = new Date().getTime();
+
+		// Find the distance between now and the count down date
+		var distance = countDownDate - now;
+
+		// Time calculations for days, hours, minutes and seconds
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString();
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, "0");
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, "0");
+
+		$("#days").html( days.replace(/(\d)/g, '<span class="digit">$1</span>'));
+		$("#hours").html(hours.replace(/(\d)/g, '<span class="digit">$1</span>'));
+		$("#minutes").html(minutes.replace(/(\d)/g, '<span class="digit">$1</span>'));
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("days").innerHTML = "00";
+			document.getElementById("houes").innerHTML = "00";
+			document.getElementById("minutes").innerHTML = "00";
+			// document.getElementById("demo").innerHTML = "EXPIRED";
+		}
+	}, 1000);
+
+
+
+
 	// sticky header
 	function headerSticky(){
 		var windowPos=$(window).scrollTop();
