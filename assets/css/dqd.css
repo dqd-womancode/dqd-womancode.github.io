@@ -226,6 +226,7 @@
     .dtr-slick-slider div .info p{
         font-size:24px;
         color: white;
+        font-weight: 500;
     }
     .dtr-slick-slider div .info a{
         display: inline-block;
@@ -365,7 +366,7 @@
     color: white;
     text-align: center;
     padding: 30px 0;
-    margin-top:50px;
+    /*margin-top:50px;*/
 }
 
 .plazas h2{
@@ -398,7 +399,7 @@
     padding: 0 15px;
 }
 .countdown-block .number{
-    font-size: 4em;
+    font-size: 3em;
     /*height: 4em;*/
 }
 
@@ -421,11 +422,11 @@
     border-radius: 3px;
 
     margin: 0 2px;
-    padding-top: 25px;
-    width: 50px;
+    padding-top: 20px;
+    width: 40px;
     display: inline-block;
     text-align: center;
-    height: 70px;
+    height: 60px;
 }
 
 .digit:after{
