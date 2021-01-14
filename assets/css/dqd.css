@@ -344,5 +344,38 @@
     position: fixed;
     bottom: 15px;
     right: 15px;
-
  }
+
+.plazas:before, .plazas:after {
+    content: " ";
+    display: table;
+}
+
+.plazas{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.plazas{
+    background: #aed000;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top:50px;
+}
+
+.plazas h2{
+    color: white!important;
+}
+
+.plazas a{
+    color: white;
+    border: 2px solid white;
+    padding: 15px 50px;
+    z-index: 999999999;
+    margin-top: 0;
+}
