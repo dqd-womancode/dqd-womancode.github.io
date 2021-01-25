@@ -4,13 +4,14 @@
 if(isset($_POST['url']) && $_POST['url'] == ''){
 
 	// put your email address here
-	$youremail = 'dalleqdallecoworking@gmail.com';
+	$youremail = 'dalleqdallecoworking@gmail.com, aula@dallequedalle.com';
 
 	// prepare message
 	$body = "Nuevo mensaje desde el formulariio de contacto de Woman Code:
 	
 	Nombre:  $_POST[name]
 	Email:  $_POST[email]
+	Teléfono:  $_POST[phone]
 	Mensaje:  $_POST[message]";
 
 	if( $_POST['email'] && !preg_match( "/[\r\n]/", $_POST['email']) ) {
