@@ -142,6 +142,30 @@
     padding: 0;
 }
 
+
+.dtr-copyright a {
+  transition: all 0.5s;
+}
+
+.dtr-copyright a:hover {
+  color: gray;
+}
+
+.dtr-form-field.checkbox{
+
+}
+
+.dtr-form-field.checkbox label{
+  display: inline;
+
+}
+
+.dtr-form-field.checkbox label a{
+  text-decoration: underline;
+
+}
+
+
 /*.slick-slide,*/
 /*.dtr-slick-slider{*/
 /*    position: relative;*/
