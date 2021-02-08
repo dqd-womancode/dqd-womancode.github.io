@@ -356,6 +356,9 @@ $(document).ready(function() {
       success: function (data) {
         console.log('Submission was successful.');
         $("#result").html("<p> En breve nos pondremos en contacto contigo <br> ¡Esperamos que entres a formar parte de la familia WOMAN CODE, curso de programación!</p>");
+        frm.each(function(){
+          this.reset();
+        });
       },
       error: function (data) {
         console.log('An error occurred.');
