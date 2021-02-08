@@ -343,7 +343,29 @@ $(document).ready(function() {
 	// 		}
 	// 	});
 	// });
-	//To clear message field on page refresh (you may clear other fields too, just give the 'id to input field' in html and mention it here, as below)
+  var frm = $('#contactform');
+
+  frm.submit(function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      type: frm.attr('method'),
+      url: frm.attr('action'),
+      data: frm.serialize(),
+      success: function (data) {
+        console.log('Submission was successful.');
+        $("#result").html("<p> En breve nos pondremos en contacto contigo <br> ¡Esperamos que entres a formar parte de la familia WOMAN CODE, curso de programación!</p>");
+      },
+      error: function (data) {
+        console.log('An error occurred.');
+        $("#result").html("<p> Error en el envío <br> Inténtlo más tarde!</p>");
+        console.log(data);
+      },
+    });
+  });
+
+  //To clear message field on page refresh (you may clear other fields too, just give the 'id to input field' in html and mention it here, as below)
 	$('#contactform #message').val('');
 
 }); // document ready
