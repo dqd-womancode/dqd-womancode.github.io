@@ -333,16 +333,16 @@ $(document).ready(function() {
     });
 
 	//Contact form
-	$(function () {
-		var v = $("#contactform").validate({
-			submitHandler: function (form) {
-				$(form).ajaxSubmit({
-					target: "#result",
-					clearForm: true
-				});
-			}
-		});
-	});
+	// $(function () {
+	// 	var v = $("#contactform").validate({
+	// 		submitHandler: function (form) {
+	// 			$(form).ajaxSubmit({
+	// 				target: "#result",
+	// 				clearForm: true
+	// 			});
+	// 		}
+	// 	});
+	// });
 	//To clear message field on page refresh (you may clear other fields too, just give the 'id to input field' in html and mention it here, as below)
 	$('#contactform #message').val('');
 
