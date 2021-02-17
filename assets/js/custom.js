@@ -349,6 +349,8 @@ $(document).ready(function() {
 
     e.preventDefault();
 
+	gtag('event', 'Formlead', { 'event_category': 'contacto', 'event_label': 'solicitar_informacion_formulario', 'value': '40'});
+
     $.ajax({
       type: frm.attr('method'),
       url: frm.attr('action'),
