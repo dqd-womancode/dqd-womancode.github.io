@@ -33,6 +33,28 @@ function calculateCountdown(countDownDate) {
 $(document).ready(function() {
     "use strict";
 
+	$(".owl-carousel").owlCarousel(
+		{
+			loop:true,
+			margin:10,
+			responsiveClass:true,
+			items:2,
+
+
+			responsive:{
+				0:{
+					items:2,
+				},
+				600:{
+					items:3,
+				},
+				1000:{
+					items:4,
+				}
+			}
+		}
+	);
+
 	$('.number').html(function(i, v){
 		return v.replace(/(\d)/g, '<span class="digit">$1</span>');
 	});
