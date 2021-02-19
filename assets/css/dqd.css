@@ -202,8 +202,14 @@
 
 .mask-image {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     z-index: 999;
+    display: none!important;
+}
+@media (min-width: 768px) {
+    .mask-image {
+      display: block!important;
+    }
 }
 
 
