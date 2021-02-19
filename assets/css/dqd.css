@@ -500,3 +500,10 @@ body{
   max-height: 150px;
     width: auto!important;
 }
+
+@media (max-width: 768px) {
+    #home{
+        padding-top: 98px;
+    }
+
+}
