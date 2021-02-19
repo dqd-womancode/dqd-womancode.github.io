@@ -203,7 +203,7 @@
 .mask-image {
     position: absolute;
     bottom: -1px;
-    z-index: 999;
+    z-index: 999999;
     display: none!important;
 }
 @media (min-width: 768px) {
