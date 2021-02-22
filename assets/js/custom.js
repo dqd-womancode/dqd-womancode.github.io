@@ -39,6 +39,8 @@ $(document).ready(function() {
 			margin:10,
 			responsiveClass:true,
 			items:2,
+			autoplay:true,
+			autoplayTimeout:3000,
 
 
 			responsive:{
