@@ -412,7 +412,7 @@
     color: white;
     border: 2px solid white;
     padding: 15px 50px;
-    z-index: 999999999;
+    /*z-index: 999999999;*/
     margin-top: 0;
 }
 
