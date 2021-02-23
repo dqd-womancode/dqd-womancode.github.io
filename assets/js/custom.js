@@ -1,9 +1,9 @@
 
-AOS.init({
-	disable: 'mobile',
-	offset: 1000,
-	duration: 1500
-});
+// AOS.init({
+// 	disable: 'mobile',
+// 	offset: 1000,
+// 	duration: 1500
+// });
 
 function calculateCountdown(countDownDate) {
 	// Get today's date and time
