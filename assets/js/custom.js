@@ -40,7 +40,7 @@ $(document).ready(function() {
 			responsiveClass:true,
 			items:2,
 			autoplay:true,
-			autoplayTimeout:3000,
+			autoplayTimeout:2000,
 
 
 			responsive:{
@@ -51,7 +51,7 @@ $(document).ready(function() {
 					items:3,
 				},
 				1000:{
-					items:4,
+					items:5,
 				}
 			}
 		}
