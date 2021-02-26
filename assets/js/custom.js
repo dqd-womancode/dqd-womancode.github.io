@@ -414,6 +414,7 @@ $(document).ready(function() {
 				console.log('Submission was successful.');
 				$("#result-reserva").html("<p>Gracias por tu reserva! En breve nos pondremos en contacto contigo. </p>");
 				$('.formulario-reserva').removeClass('expanded');
+				setTimeout(function(){ $("#result-reserva").html("<p></p>");}, 3000);
 				frm_reservation.each(function(){
 					this.reset();
 				});
