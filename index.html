@@ -529,6 +529,110 @@
 </section>
 
 
+<section id="tab5" class="dtr-sticky-tabs-section">
+    <div class="dtr-sticky-tabs-content">
+        <div class="container">
+            <div class="row">
+
+                <!-- column 1 starts -->
+                <div  class="col-12 col-md-6 small-device-space">
+                    <h2>¿Cuánto cuesta el curso?</h2>
+                    <div class="text">
+                        <!-- Text -->
+                        <p>
+                            El precio del curso es de <strong>4.500€</strong>
+                            </p>
+                        <p>
+                            Si necesitas financiación te informamos de posibles métodos de pago aplazado.
+                        </p>
+                        <button class="dtr-btn btn-red dtr-mt-30" id="reserva-button">¡Reserva ya tu plaza!</button>
+
+                    </div>
+                </div>
+                <!-- column 1 ends -->
+
+                <!-- column 2 starts -->
+                <div  class="col-12 col-md-6 small-device-space ">
+                    <h2>Descuentos</h2>
+                    <div class="text">
+                    <p>Tenemos una amplia variedad de descuentos. Consulta en cuál de ellos puedes encajar y solicítalo en la hoja de inscripción.</p>
+                    <ul>
+                        <li>Mujeres en paro, mínimo 3 meses: <strong>20% de descuento</strong>. </li>
+                        <li>Mujeres que vivan en zonas rurales: <strong>20% de descuento</strong>. </li>
+                        <li>Plan trae una amiga. Sabemos que los grandes desafíos es mejor afrontarlos con una buena amiga. Si os matriculáis conjuntamente tendréis un <strong>20% de descuento</strong> cada una. </li>
+                    </ul>
+                    <p><i style="font-size: 0.8em; font-style: italic;">*Descuentos no acumulables y sujetos a presentación de documentación acreditativa.</i></p>
+                    </div>
+                </div>
+                <!-- column 2 ends -->
+
+            </div>
+
+            <div class="formulario-reserva">
+                <form id="form-reserva" method="post" action="php/reserva-form.php">
+                    <fieldset>
+                        <!-- form two columns start -->
+                        <div class="dtr-form-row dtr-form-row-2col clearfix">
+                            <div class="dtr-form-column">
+                                <p class="dtr-form-field"><span class="dtr-form-subtext">Nombre</span>
+                                    <input name="name" type="text" placeholder="" required>
+                                </p>
+                            </div>
+                            <div class="dtr-form-column">
+                                <p class="dtr-form-field"><span class="dtr-form-subtext">Apellidos</span>
+                                    <input name="apellidos" class="required email" type="text" placeholder=""
+                                           required>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dtr-form-row dtr-form-row-2col clearfix">
+                            <div class="dtr-form-column">
+                                <p class="dtr-form-field"><span class="dtr-form-subtext">Teléfono</span>
+                                    <input name="phone" type="text" placeholder="" required>
+                                </p>
+                            </div>
+                            <div class="dtr-form-column">
+                                <p class="dtr-form-field"><span class="dtr-form-subtext">Email</span>
+                                    <input name="email" class="required email" type="text" placeholder=""
+                                           required>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- form two columns ends -->
+                        <p class="antispam">Leave this empty: <br/>
+                            <input name="url"/>
+                        </p>
+
+                        <p>Seleccione descuento:</p>
+                        <input type="radio" id="paro" name="descuento" value="paro">
+                        <label for="paro">Mujer en paro.</label><br>
+                        <input type="radio" id="rural" name="descuento" value="rural">
+                        <label for="rural">Mujer rural.</label><br>
+                        <input type="radio" id="amiga" name="descuento" value="amiga">
+                        <label for="amiga">Plan trae una amiga.</label>
+                        <p class="dtr-form-field"><span class="dtr-form-subtext">Observaciones</span>
+                            <textarea rows="6" name="message" id="observations" class="required"
+                                      placeholder="Coméntanos algo"></textarea>
+                        </p>
+                        <p class="dtr-form-field checkbox">
+                            <input type="checkbox" id="legal" required> <label for="cbox2">He leído y acepto la
+                            <a href="https://dallequedalle.com/aviso-legal/politica-privacidad/"
+                               target="_blank">política de privacidad</a> </label>
+                        </p>
+                        <p class="text-center">
+                            <button id="botonenviarformularioreserva" class="dtr-btn btn-red btn-submit w-100" type="submit"> Reservar <i class="icon-arrow-right-circle dtr-ml-10"></i></button>
+                        </p>
+                    </fieldset>
+                </form>
+
+            </div>
+            <div id="result-reserva"></div>
+
+        </div>
+    </div>
+</section>
+
+
 
 <section id="companies" class="dtr-section dtr-pt-50 dtr-pb-100">
   <div class="container">

@@ -32,6 +32,11 @@ function calculateCountdown(countDownDate) {
 // Custom JavaScript
 $(document).ready(function() {
     "use strict";
+    $('#reserva-button').on('click',function(){
+    	$('.formulario-reserva').toggleClass('expanded');
+	})
+
+
 
 	$(".owl-carousel").owlCarousel(
 		{
@@ -393,6 +398,32 @@ $(document).ready(function() {
       },
     });
   });
+
+
+	var frm_reservation = $('#form-reserva');
+
+	frm_reservation.submit(function (e) {
+
+		e.preventDefault();
+
+		$.ajax({
+			type: frm_reservation.attr('method'),
+			url: frm_reservation.attr('action'),
+			data: frm_reservation.serialize(),
+			success: function (data) {
+				console.log('Submission was successful.');
+				$("#result-reserva").html("<p>Gracias por tu reserva! En breve nos pondremos en contacto contigo. </p>");
+				frm_reservation.each(function(){
+					this.reset();
+				});
+			},
+			error: function (data) {
+				console.log('An error occurred.');
+				$("#result").html("<p> Error en el envío <br> Inténtlo más tarde!</p>");
+				console.log(data);
+			},
+		});
+	});
 
   //To clear message field on page refresh (you may clear other fields too, just give the 'id to input field' in html and mention it here, as below)
 	$('#contactform #message').val('');

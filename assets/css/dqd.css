@@ -509,3 +509,38 @@ body{
     }
 
 }
+
+#form-reserva label{
+    display: inline;
+    color: #aed000;
+}
+
+.formulario-reserva{
+    height: 0;
+    transition: all 1.5s;
+    overflow: hidden;
+}
+.formulario-reserva.expanded{
+    height: auto;
+}
+
+ul{
+    padding-left: 20px;
+    list-style: none;
+}
+
+li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #aed000;
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 15px; ;
+    border-radius: 50%;
+}
+
+#result-reserva{
+    font-weight: bold;
+    color: #aed000;
+}
