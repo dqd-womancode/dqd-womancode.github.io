@@ -10,7 +10,7 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	$body = "Solicitud de reserva desde el formulariio de reserva de Woman Code:
 	
 	Nombre:  $_POST[name]
-	Apellidos:  $_POST[apelidos]
+	Apellidos:  $_POST[apellidos]
 	Email:  $_POST[email]
 	Teléfono:  $_POST[phone]
 	Descuento:  $_POST[descuento]

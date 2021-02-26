@@ -413,6 +413,7 @@ $(document).ready(function() {
 			success: function (data) {
 				console.log('Submission was successful.');
 				$("#result-reserva").html("<p>Gracias por tu reserva! En breve nos pondremos en contacto contigo. </p>");
+				$('.formulario-reserva').removeClass('expanded');
 				frm_reservation.each(function(){
 					this.reset();
 				});
