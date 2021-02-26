@@ -11,6 +11,7 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	
 	Nombre:  $_POST[name]
 	Apellidos:  $_POST[apellidos]
+	DNI:  $_POST[dni]
 	Email:  $_POST[email]
 	Teléfono:  $_POST[phone]
 	Descuento:  $_POST[descuento]
