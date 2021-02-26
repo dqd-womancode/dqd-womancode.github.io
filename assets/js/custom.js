@@ -33,6 +33,9 @@ function calculateCountdown(countDownDate) {
 $(document).ready(function() {
     "use strict";
     $('#reserva-button').on('click',function(){
+    	if(!$('#reserva-button').hasClass('expanded')){
+    		window.location.href= "#reserva";
+		}
     	$('.formulario-reserva').toggleClass('expanded');
 	})
 

@@ -524,12 +524,12 @@ body{
     height: auto;
 }
 
-ul{
+.descuento ul{
     padding-left: 20px;
     list-style: none;
 }
 
-li::before {
+.descuento li::before {
     content: '';
     width: 10px;
     height: 10px;
@@ -544,3 +544,4 @@ li::before {
     font-weight: bold;
     color: #aed000;
 }
+
