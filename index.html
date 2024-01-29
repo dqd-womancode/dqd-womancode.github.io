@@ -861,8 +861,8 @@
             formdata.append("phone", phone);
             formdata.append("subject", "Formulario de contacto desde WomanCode");
             formdata.append("message", message);
-            formdata.append("to", "muffinzap@gmail.com");
-            formdata.append("to", "xabitrigo@gmail.com");
+            formdata.append("to", "dalleqdallecoworking@gmail.com");
+            formdata.append("to", "aula@dallequedalle.com");
             
             var requestOptions = {
               method: 'POST',
@@ -872,8 +872,8 @@
             if (isPrivacyAccepted) {
                 fetch("https://sendmail-w01.galicloud.workers.dev/", requestOptions)
                   .then(response => response.text())
-                  .then(result => console.log(result))
-                  .catch(error => console.log('error', error));
+                  .then(result => {console.log(result); alert('Correo enviado con éxito'); })
+                  .catch(error => {console.log('error', error); alert('Problema al enviar el correo. Avísanos por teléfono ( 697 20 93 96 ) o email (aula@dallequedalle.com)'; });
             }
         }
         const form = document.getElementById('contactform');
